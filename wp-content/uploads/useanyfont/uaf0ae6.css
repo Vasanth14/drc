@@ -1,0 +1,12 @@
+				@font-face {
+					font-family: 'tamil';
+					src: url('161017092103tamil.woff') format('woff');
+					  font-display: auto;
+				}
+
+				.tamil{font-family: 'tamil' !important;}
+
+						.tamil{
+					font-family: 'tamil' !important;
+				}
+		

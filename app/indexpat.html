@@ -1,0 +1,74 @@
+  
+<!DOCTYPE html>
+<html>
+   
+<!-- Mirrored from maduraichildrenhospital.in/app/indexpat.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Feb 2024 12:34:59 GMT -->
+<head>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+                <script>
+          $(function() {
+            $( ".datepicker" ).datepicker({
+                minDate: -100,
+                maxDate: "+1000D",
+                dateFormat: 'dd-mm-yy',
+                onSelect: function(datetext){
+                    $(this).val(datetext);
+                },
+            });
+         });
+      </script>
+   </head>
+   <body class="container bodylog">
+                <div class='formalert hider' id="alerttag1">
+                    <div class="alert alert-success" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        Well done! You successfully Logged in.
+                    </div>
+                </div>
+                <div class='formalert hider' id="alerttag2">
+                    <div class="alert alert-warning" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        Enter a valid User Name and Password
+                    </div>
+                </div>
+                <div class='formalert hider' id="alerttag3">
+                    <div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        Try submitting again
+                    </div>
+                </div>
+        <div class="loginform">
+            <div class="panel custompanel" >
+                <div class="panel-heading customph">
+                    <img src="images/logo.jpg" style="width:100%;">
+                </div>
+                <div class="panel-body ">
+                <form  id="msform" method="POST" >
+                     <div class="form-group">
+                          <label for="exampleInputEmail1"><span class="glyphicon glyphicon-user" aria-hidden="true">  </span> DOB of your Child</label>                         
+                          <input type="date" class="form-control sec-color"  name="username" id="uname" placeholder="User Name" autocomplete="off" required>
+                     </div>
+                     
+                     <div class="form-group">
+                            <label for="exampleInputPassword1">
+                            <span class="glyphicon glyphicon-lock  " aria-hidden="true"></span>
+                            Phone Number</label>
+                            <input type="number" class="form-control sec-color" name="password" id="pass" placeholder="Phone Number" required>
+                     </div>
+                    
+                     <center><button type="submit" name="btn-login" class="btn btn-danger">Submit</button></center>
+                </form>
+            </div>
+        </div>
+        <center><p>Powered By <a href="http:///www.hasotech.com" target="_blank">HasoTechnology</a></p></center>
+            </div>  
+        </div>
+    </div>
+   </body>
+
+<!-- Mirrored from maduraichildrenhospital.in/app/indexpat.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Feb 2024 12:35:05 GMT -->
+</html>
